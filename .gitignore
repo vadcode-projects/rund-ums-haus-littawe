@@ -3,3 +3,4 @@ dist/
 .tools/
 *.log
 qa-*.png
+github-token.txt
