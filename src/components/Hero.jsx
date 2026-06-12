@@ -6,13 +6,13 @@ export default function Hero() {
   const assetBase = import.meta.env.BASE_URL;
 
   return (
-    <section id="startseite" className="relative overflow-hidden bg-navy pt-24 text-white lg:pt-[104px]">
+    <section id="startseite" className="relative overflow-hidden bg-navy pt-16 text-white lg:pt-[104px]">
       <img
         src={`${assetBase}hero-real.jpg`}
         alt="Gepflegtes Wohnhaus mit Grünfläche"
-        className="absolute inset-0 h-full w-full object-cover opacity-[0.62]"
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.68]"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy/78 to-navy/34" />
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-dark via-navy/74 to-navy/28" />
       <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-fog to-transparent" />
       <div className="section-shell relative grid min-h-[calc(86vh-6rem)] items-center gap-10 py-12 sm:py-14 lg:min-h-[calc(84vh-6.5rem)] lg:grid-cols-[minmax(0,1.02fr)_minmax(320px,0.68fr)]">
         <motion.div

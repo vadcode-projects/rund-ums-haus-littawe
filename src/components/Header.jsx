@@ -9,9 +9,14 @@ export default function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200 bg-white/[0.94] shadow-sm backdrop-blur-xl">
-      <div className="section-shell grid h-24 grid-cols-[auto_1fr_auto] items-center gap-4 lg:h-[104px]">
-        <Logo />
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/30 bg-white/65 shadow-sm backdrop-blur-xl lg:border-slate-200 lg:bg-white/[0.94]">
+      <div className="section-shell flex h-16 items-center justify-between gap-4 lg:grid lg:h-[104px] lg:grid-cols-[auto_1fr_auto]">
+        <div className="hidden lg:block">
+          <Logo />
+        </div>
+        <a href="#startseite" className="max-w-[220px] text-sm font-extrabold leading-tight text-navy lg:hidden">
+          Rund ums Haus Littawe
+        </a>
         <nav className="hidden items-center justify-center gap-8 lg:flex" aria-label="Hauptnavigation">
           {navItems.map(([label, href]) => (
             <a key={href} className="text-sm font-semibold text-navy transition hover:text-green" href={href}>
@@ -25,7 +30,7 @@ export default function Header() {
           </a>
         </div>
         <button
-          className="grid h-11 w-11 place-items-center justify-self-end rounded-lg border border-slate-200 text-navy lg:hidden"
+          className="grid h-10 w-10 place-items-center rounded-lg border border-white/50 bg-white/35 text-navy shadow-sm backdrop-blur lg:hidden"
           type="button"
           aria-label={isOpen ? 'Menü schließen' : 'Menü öffnen'}
           onClick={() => setIsOpen((value) => !value)}
