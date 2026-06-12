@@ -38,8 +38,8 @@ export const navItems = [
   ['Startseite', '#startseite'],
   ['Leistungen', '#leistungen'],
   ['Über uns', '#ueber-uns'],
-  ['Ablauf', '#ablauf'],
-  ['Kontakt', '#kontakt'],
+  ['Bewertungen', '#bewertungen'],
+  ['Kontakt', '#anfrage'],
 ];
 
 export const benefits = [
@@ -120,11 +120,6 @@ export const services = [
     title: 'Dachrinnenreinigung',
     text: 'Entfernung von Laub und Schmutz zur Unterstützung eines freien Wasserablaufs.',
     icon: Home,
-  },
-  {
-    title: 'Kurzfristige Objekttermine',
-    text: 'Unverbindliche Besichtigung und passendes Angebot für Ihre Immobilie.',
-    icon: Clock3,
   },
 ];
 
